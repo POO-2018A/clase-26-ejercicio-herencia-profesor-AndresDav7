@@ -492,17 +492,7 @@ public class Matricula extends javax.swing.JFrame {
        Estudiante newEsMatriculado = new Estudiante (estudianteSel, materiaSel, edad);
 
         if (!estudianteSel.equals("")&& !materiaSel.equals("")){
-//            int confirmacion= JOptionPane.showConfirmDialog(rootPane, "Estás seguro?","Confirmación",JOptionPane.YES_NO_OPTION);
-//            if(confirmacion ==0){
-//                
-//                //Utilizo un bucle for para comparar si los valores ingresados ya estan registrados en la tabla.
-//                for (int i = 0; i < tblMatriculas.getRowCount(); i++) {
-//                    if (estudianteSel  == tblModelMatriculas.getValueAt(i, 1).toString().trim() && materiaSel== tblModelEstudiantes.getValueAt(i, 2).toString().trim() ){
-//                        materiaExiste =true;
-//                        break;
-//                    }
-//                    
-//                }   
+  
                 if (!materiaExiste){
                     listaEsMatriculados.add(newEsMatriculado);
                     contador++;
@@ -513,13 +503,7 @@ public class Matricula extends javax.swing.JFrame {
 
                 }
             }
-        
-//        else{
-//            JOptionPane.showMessageDialog(rootPane,"Por favor ingrese todos los campos");
-//        }
-        
-     
-    
+
         
     }//GEN-LAST:event_btnMatricularEstudianteActionPerformed
 
